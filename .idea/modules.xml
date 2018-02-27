@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MediaPickerLib.iml" filepath="$PROJECT_DIR$/MediaPickerLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mediapickerlib/mediapicker.iml" filepath="$PROJECT_DIR$/mediapickerlib/mediapicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/mediapickerlib/mediapickerlib.iml" filepath="$PROJECT_DIR$/mediapickerlib/mediapickerlib.iml" />
     </modules>
   </component>
