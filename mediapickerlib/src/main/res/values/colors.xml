@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F7AB33</color>
+    <color name="colorPrimaryDark">#d1912c</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="titleTextColor">#FFFFFF</color>
+    <color name="titleTabColor">#b7b4b4</color>
+    <color name="titleSelectedTabColor">#FFFFFF</color>
+</resources>
