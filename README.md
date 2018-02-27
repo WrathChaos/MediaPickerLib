@@ -1,6 +1,8 @@
 # MediaPickerLib
 ### Kotlin based media picker library, to pick multiple images and/or vidoes from built-in gallery. Easy to implement and use :) 
-
+<p align="center">
+<img width="200" height="200" src="https://github.com/WrathChaos/MediaPickerLib/blob/master/MediaPickerLib.png">
+</p>
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
