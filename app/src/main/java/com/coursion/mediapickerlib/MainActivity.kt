@@ -19,8 +19,8 @@ import java.io.FileNotFoundException
 
 class MainActivity : AppCompatActivity() {
 
-    val OPEN_MEDIA_PICKER = 1  // Request code
-    val MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 100 // Request code for read external storage
+    private val OPEN_MEDIA_PICKER = 1  // Request code
+    private val MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 100 // Request code for read external storage
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
