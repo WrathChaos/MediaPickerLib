@@ -6,7 +6,7 @@
 
 <p align="center">
 <a href="https://github.com/WrathChaos/MediaPickerLib">
-<img src=https://kotlin.link/awesome-kotlin.svg"
+<img src="https://kotlin.link/awesome-kotlin.svg"
 alt="awesome_kotlin">
 </a>
 <a href="https://opensource.org/licenses/MIT">
@@ -23,7 +23,7 @@ alt="API">
                
 </a>
 <a href="https://github.com/WrathChaos/MediaPickerLib">
-<img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg)"
+<img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"
 alt="Maintenance">
 </a>
 </p>
