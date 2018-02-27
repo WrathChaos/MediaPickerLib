@@ -7,23 +7,24 @@
 <p align="center">
 <a href="https://github.com/WrathChaos/MediaPickerLib">
 <img src=https://kotlin.link/awesome-kotlin.svg"
-alt="License">
+alt="awesome_kotlin">
 </a>
 <a href="https://opensource.org/licenses/MIT">
 <img src="https://img.shields.io/badge/License-MIT-yellow.svg"
-alt="platform">
+alt="licence">
 </a>
 <a href="https://jitpack.io/#WrathChaos/MediaPickerLib">
 <img src="https://jitpack.io/v/WrathChaos/MediaPickerLib.svg"
-alt="Cocoapods">
+alt="Jitpack">
 </a>
 <a href="https://android-arsenal.com/api?level=19">
 <img src="https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)"
-alt="Downloads">
+alt="API">
+               
 </a>
 <a href="https://github.com/WrathChaos/MediaPickerLib">
 <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg)"
-alt="Downloads">
+alt="Maintenance">
 </a>
 </p>
 
