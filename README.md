@@ -1,15 +1,32 @@
 # MediaPickerLib
 ### Kotlin based media picker library, to pick multiple images and/or vidoes from built-in gallery. Easy to implement and use :) 
 <p align="center">
-<img width="200" height="200" src="https://github.com/WrathChaos/MediaPickerLib/blob/master/MediaPickerLib.png">
+<img src="https://github.com/WrathChaos/MediaPickerLib/blob/master/MediaPickerLibAsset.jpg">
 </p>
 
+<p align="center">
+<a href="https://github.com/WrathChaos/MediaPickerLib">
+<img src=https://kotlin.link/awesome-kotlin.svg"
+alt="License">
+</a>
+<a href="https://opensource.org/licenses/MIT">
+<img src="https://img.shields.io/badge/License-MIT-yellow.svg"
+alt="platform">
+</a>
+<a href="https://jitpack.io/#WrathChaos/MediaPickerLib">
+<img src="https://jitpack.io/v/WrathChaos/MediaPickerLib.svg"
+alt="Cocoapods">
+</a>
+<a href="https://android-arsenal.com/api?level=19">
+<img src="https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)"
+alt="Downloads">
+</a>
+<a href="https://github.com/WrathChaos/MediaPickerLib">
+<img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg)"
+alt="Downloads">
+</a>
+</p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![](https://jitpack.io/v/WrathChaos/MediaPickerLib.svg)](https://jitpack.io/#WrathChaos/MediaPickerLib)
-[![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
-[![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/WrathChaos/MediaPickerLib)
 
 ## Setup
 Add this on your module:app build.gradle
