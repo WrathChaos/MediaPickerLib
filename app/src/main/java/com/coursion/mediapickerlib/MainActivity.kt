@@ -7,9 +7,13 @@ import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import android.app.Activity
 import android.content.pm.PackageManager
+import android.content.res.ColorStateList
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Build
+import android.support.design.widget.FloatingActionButton
+import android.support.v4.content.ContextCompat
+import android.support.v4.view.ViewCompat
 import android.util.Log
 import com.coursion.freakycoder.mediapicker.galleries.Gallery
 import kotlinx.android.synthetic.main.content_main.*
@@ -27,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
+        setButtonTint(fab, ContextCompat.getColorStateList(applicationContext, R.color.fabColor)!!)
         fab.setOnClickListener { view ->
             if (!permissionIfNeeded()) {
                 val intent = Intent(this, Gallery::class.java)
@@ -37,6 +42,14 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra("maxSelection", 3) // Optional
                 startActivityForResult(intent, OPEN_MEDIA_PICKER)
             }
+        }
+    }
+
+    fun setButtonTint(button: FloatingActionButton, tint: ColorStateList) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            button.backgroundTintList = tint
+        } else {
+            ViewCompat.setBackgroundTintList(button, tint)
         }
     }
 

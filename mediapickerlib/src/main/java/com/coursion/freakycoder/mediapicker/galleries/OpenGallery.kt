@@ -1,8 +1,12 @@
 package com.coursion.freakycoder.mediapicker.galleries
 
 import android.content.Context
+import android.content.res.ColorStateList
+import android.os.Build
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
+import android.support.v4.content.ContextCompat
+import android.support.v4.view.ViewCompat
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.RecyclerView
@@ -14,6 +18,7 @@ import android.view.WindowManager
 import com.coursion.freakycoder.mediapicker.adapters.MediaAdapter
 import com.coursion.freakycoder.mediapicker.fragments.ImageFragment
 import com.coursion.freakycoder.mediapicker.fragments.VideoFragment
+import com.coursion.freakycoder.mediapicker.helper.Util
 import com.coursion.mediapickerlib.R
 import kotlinx.android.synthetic.main.activity_open_gallery.*
 import kotlinx.android.synthetic.main.content_open_gallery.*
@@ -39,6 +44,8 @@ class OpenGallery : AppCompatActivity() {
         fab = findViewById(R.id.fab)
         setSupportActionBar(toolbar)
         val fab = findViewById<View>(R.id.fab) as FloatingActionButton
+        val util = Util()
+        util.setButtonTint(fab, ContextCompat.getColorStateList(applicationContext, R.color.fabColor)!!)
         fab.setOnClickListener { finish() }
         toolbar.setNavigationIcon(R.drawable.arrow_back)
         title = Gallery.title

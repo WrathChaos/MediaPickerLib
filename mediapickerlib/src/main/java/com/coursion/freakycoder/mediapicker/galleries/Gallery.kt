@@ -7,12 +7,14 @@ import android.support.design.widget.FloatingActionButton
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
+import android.support.v4.content.ContextCompat
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.view.WindowManager
 import com.coursion.freakycoder.mediapicker.fragments.ImageFragment
 import com.coursion.freakycoder.mediapicker.fragments.VideoFragment
+import com.coursion.freakycoder.mediapicker.helper.Util
 import com.coursion.mediapickerlib.R
 import kotlinx.android.synthetic.main.activity_gallery.*
 import java.util.ArrayList
@@ -40,6 +42,8 @@ class Gallery : AppCompatActivity() {
         toolbar.setNavigationOnClickListener { onBackPressed() }
 
         val fab = findViewById<View>(R.id.fab) as FloatingActionButton
+        val util = Util()
+        util.setButtonTint(fab, ContextCompat.getColorStateList(applicationContext, R.color.fabColor)!!)
         fab.setOnClickListener { returnResult() }
 
         title = intent.extras!!.getString("title")
