@@ -11,7 +11,7 @@ import android.widget.ImageView
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.Glide
-import com.coursion.mediapickerlib.R
+import com.coursion.mediapickerLib.R
 
 class MediaAdapter(private val bitmapList: List<String>,
                    private val selected: List<Boolean>,

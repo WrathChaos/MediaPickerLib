@@ -3,7 +3,6 @@ package com.coursion.freakycoder.mediapicker.adapters
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,7 +12,7 @@ import android.widget.TextView
 import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.Glide
 import com.coursion.freakycoder.mediapicker.helper.SquareLayout
-import com.coursion.mediapickerlib.R
+import com.coursion.mediapickerLib.R
 
 class BucketsAdapter(private val bucketNames: List<String>,
                      private val bitmapList: List<String>,

@@ -1,6 +1,6 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.coursion.mediapickerlib">
+    package="com.coursion.mediapickerLib">
     <uses-feature android:name="android.hardware.camera2" android:required="false"/>
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />

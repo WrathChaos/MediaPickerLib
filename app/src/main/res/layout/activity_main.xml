@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F2F2F2"
-    tools:context="com.coursion.mediapickerlib.MainActivity">
+    tools:context="com.coursion.mediapickerApp.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

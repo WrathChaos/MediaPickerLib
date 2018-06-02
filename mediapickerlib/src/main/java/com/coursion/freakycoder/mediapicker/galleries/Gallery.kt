@@ -15,7 +15,7 @@ import android.view.WindowManager
 import com.coursion.freakycoder.mediapicker.fragments.ImageFragment
 import com.coursion.freakycoder.mediapicker.fragments.VideoFragment
 import com.coursion.freakycoder.mediapicker.helper.Util
-import com.coursion.mediapickerlib.R
+import com.coursion.mediapickerLib.R
 import kotlinx.android.synthetic.main.activity_gallery.*
 import java.util.ArrayList
 

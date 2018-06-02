@@ -15,7 +15,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.coursion.freakycoder.mediapicker.adapters.BucketsAdapter
 import com.coursion.freakycoder.mediapicker.galleries.OpenGallery
-import com.coursion.mediapickerlib.R
+import com.coursion.mediapickerLib.R
 import java.io.File
 import java.util.ArrayList
 import java.util.HashSet

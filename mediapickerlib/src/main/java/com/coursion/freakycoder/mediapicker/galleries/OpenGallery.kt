@@ -1,16 +1,12 @@
 package com.coursion.freakycoder.mediapicker.galleries
 
 import android.content.Context
-import android.content.res.ColorStateList
-import android.os.Build
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
 import android.support.v4.content.ContextCompat
-import android.support.v4.view.ViewCompat
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.Toolbar
 import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.View
@@ -19,7 +15,7 @@ import com.coursion.freakycoder.mediapicker.adapters.MediaAdapter
 import com.coursion.freakycoder.mediapicker.fragments.ImageFragment
 import com.coursion.freakycoder.mediapicker.fragments.VideoFragment
 import com.coursion.freakycoder.mediapicker.helper.Util
-import com.coursion.mediapickerlib.R
+import com.coursion.mediapickerLib.R
 import kotlinx.android.synthetic.main.activity_open_gallery.*
 import kotlinx.android.synthetic.main.content_open_gallery.*
 import java.util.ArrayList
