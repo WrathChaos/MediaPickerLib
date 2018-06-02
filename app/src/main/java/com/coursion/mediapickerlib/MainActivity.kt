@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
                 // Mode 1 for both images and videos selection, 2 for images only and 3 for videos!
                 intent.putExtra("mode", 1)
                 intent.putExtra("maxSelection", 3) // Optional
+                intent.putExtra("tabBarHidden", false) //Optional - default value is false
                 startActivityForResult(intent, OPEN_MEDIA_PICKER)
             }
         }
