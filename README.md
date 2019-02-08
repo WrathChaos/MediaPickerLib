@@ -42,7 +42,7 @@ allprojects {
 ## Gradle
 
 ```
-implementation 'com.github.WrathChaos:MediaPickerLib:0.1.3'
+implementation 'com.github.WrathChaos:MediaPickerLib:0.1.4'
 ```
 
 ## Usage
