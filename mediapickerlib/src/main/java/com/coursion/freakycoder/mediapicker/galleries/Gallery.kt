@@ -28,6 +28,11 @@ class Gallery : AppCompatActivity() {
         var mode: Int = 0
     }
 
+
+
+
+
+
     open lateinit var fab: FloatingActionButton
 
     override fun onCreate(savedInstanceState: Bundle?) {

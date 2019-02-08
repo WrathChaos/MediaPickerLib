@@ -73,7 +73,7 @@ class OpenGallery : AppCompatActivity() {
         mAdapter = MediaAdapter(mediaList, selected, applicationContext)
         val mLayoutManager = GridLayoutManager(applicationContext, 3)
         recyclerView!!.layoutManager = mLayoutManager
-        recyclerView!!.itemAnimator.changeDuration = 0
+        recyclerView!!.itemAnimator?.changeDuration = 0
         recyclerView!!.adapter = mAdapter
         recyclerView!!.addOnItemTouchListener(RecyclerTouchListener(this, recyclerView, object : ClickListener {
             override fun onClick(view: View, position: Int) {
