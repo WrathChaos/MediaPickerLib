@@ -26,12 +26,8 @@ class Gallery : AppCompatActivity() {
         var title: String? = null
         var maxSelection: Int = 0
         var mode: Int = 0
+        var tabBarHidden = false
     }
-
-
-
-
-
 
     open lateinit var fab: FloatingActionButton
 
@@ -55,6 +51,7 @@ class Gallery : AppCompatActivity() {
         maxSelection = intent.extras!!.getInt("maxSelection")
         if (maxSelection == 0) maxSelection = Integer.MAX_VALUE
         mode = intent.extras!!.getInt("mode")
+        tabBarHidden = intent.extras!!.getBoolean("tabBarHidden")
         title = title
         selectionTitle = 0
         // Set the ViewPager and TabLayout
@@ -82,6 +79,12 @@ class Gallery : AppCompatActivity() {
         if (mode == 1 || mode == 3)
             adapter.addFragment(VideoFragment(), "Videos")
         viewPager!!.adapter = adapter
+
+        if (tabBarHidden) {
+            tabLayout.visibility = View.GONE
+        } else {
+            tabLayout.visibility = View.VISIBLE
+        }
     }
 
     internal inner class ViewPagerAdapter(manager: FragmentManager) : FragmentPagerAdapter(manager) {
