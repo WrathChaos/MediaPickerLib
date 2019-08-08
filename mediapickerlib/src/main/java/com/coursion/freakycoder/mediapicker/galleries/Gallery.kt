@@ -3,13 +3,13 @@ package com.coursion.freakycoder.mediapicker.galleries
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.FloatingActionButton
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentPagerAdapter
-import android.support.v4.content.ContextCompat
-import android.support.v4.view.ViewPager
-import android.support.v7.app.AppCompatActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
+import androidx.core.content.ContextCompat
+import androidx.viewpager.widget.ViewPager
+import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import android.view.WindowManager
 import com.coursion.freakycoder.mediapicker.fragments.ImageFragment
@@ -71,7 +71,7 @@ class Gallery : AppCompatActivity() {
     }
 
     //This method set up the tab view for images and videos
-    private fun setupViewPager(viewPager: ViewPager?) {
+    private fun setupViewPager(viewPager: androidx.viewpager.widget.ViewPager?) {
         val adapter = ViewPagerAdapter(supportFragmentManager)
         if (mode == 1 || mode == 2) {
             adapter.addFragment(ImageFragment(), "Images")
@@ -87,11 +87,11 @@ class Gallery : AppCompatActivity() {
         }
     }
 
-    internal inner class ViewPagerAdapter(manager: FragmentManager) : FragmentPagerAdapter(manager) {
-        private val mFragmentList = ArrayList<Fragment>()
+    internal inner class ViewPagerAdapter(manager: androidx.fragment.app.FragmentManager) : androidx.fragment.app.FragmentPagerAdapter(manager) {
+        private val mFragmentList = ArrayList<androidx.fragment.app.Fragment>()
         private val mFragmentTitleList = ArrayList<String>()
 
-        override fun getItem(position: Int): Fragment {
+        override fun getItem(position: Int): androidx.fragment.app.Fragment {
             return mFragmentList[position]
         }
 
@@ -99,7 +99,7 @@ class Gallery : AppCompatActivity() {
             return mFragmentList.size
         }
 
-        fun addFragment(fragment: Fragment, title: String) {
+        fun addFragment(fragment: androidx.fragment.app.Fragment, title: String) {
             mFragmentList.add(fragment)
             mFragmentTitleList.add(title)
         }

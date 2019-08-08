@@ -2,8 +2,8 @@ package com.coursion.freakycoder.mediapicker.helper
 
 import android.content.res.ColorStateList
 import android.os.Build
-import android.support.design.widget.FloatingActionButton
-import android.support.v4.view.ViewCompat
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import androidx.core.view.ViewCompat
 
 /**
  * Created by WrathChaos on 5.03.2018.

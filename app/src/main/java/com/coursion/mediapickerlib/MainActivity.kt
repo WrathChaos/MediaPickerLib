@@ -3,7 +3,7 @@ package com.coursion.mediapickerlib
 import android.Manifest
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import android.app.Activity
 import android.content.pm.PackageManager
@@ -11,9 +11,9 @@ import android.content.res.ColorStateList
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Build
-import android.support.design.widget.FloatingActionButton
-import android.support.v4.content.ContextCompat
-import android.support.v4.view.ViewCompat
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
 import android.util.Log
 import com.coursion.freakycoder.mediapicker.galleries.Gallery
 import kotlinx.android.synthetic.main.content_main.*

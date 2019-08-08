@@ -4,13 +4,13 @@ import android.content.Context
 import android.content.res.ColorStateList
 import android.os.Build
 import android.os.Bundle
-import android.support.design.widget.FloatingActionButton
-import android.support.v4.content.ContextCompat
-import android.support.v4.view.ViewCompat
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.Toolbar
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import androidx.appcompat.widget.Toolbar
 import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.View
@@ -71,7 +71,7 @@ class OpenGallery : AppCompatActivity() {
             selected[i] = imagesSelected.contains(mediaList[i])
         }
         mAdapter = MediaAdapter(mediaList, selected, applicationContext)
-        val mLayoutManager = GridLayoutManager(applicationContext, 3)
+        val mLayoutManager = androidx.recyclerview.widget.GridLayoutManager(applicationContext, 3)
         recyclerView!!.layoutManager = mLayoutManager
         recyclerView!!.itemAnimator?.changeDuration = 0
         recyclerView!!.adapter = mAdapter
@@ -109,7 +109,7 @@ class OpenGallery : AppCompatActivity() {
         fun onLongClick(view: View?, position: Int)
     }
 
-    class RecyclerTouchListener(context: Context, recyclerView: RecyclerView, private val clickListener: OpenGallery.ClickListener?) : RecyclerView.OnItemTouchListener {
+    class RecyclerTouchListener(context: Context, recyclerView: androidx.recyclerview.widget.RecyclerView, private val clickListener: OpenGallery.ClickListener?) : androidx.recyclerview.widget.RecyclerView.OnItemTouchListener {
         private val gestureDetector: GestureDetector
 
         init {
@@ -127,7 +127,7 @@ class OpenGallery : AppCompatActivity() {
             })
         }
 
-        override fun onInterceptTouchEvent(rv: RecyclerView, e: MotionEvent): Boolean {
+        override fun onInterceptTouchEvent(rv: androidx.recyclerview.widget.RecyclerView, e: MotionEvent): Boolean {
             val child = rv.findChildViewUnder(e.x, e.y)
             if (child != null && clickListener != null && gestureDetector.onTouchEvent(e)) {
                 clickListener.onClick(child, rv.getChildPosition(child))
@@ -135,7 +135,7 @@ class OpenGallery : AppCompatActivity() {
             return false
         }
 
-        override fun onTouchEvent(rv: RecyclerView, e: MotionEvent) {}
+        override fun onTouchEvent(rv: androidx.recyclerview.widget.RecyclerView, e: MotionEvent) {}
 
         override fun onRequestDisallowInterceptTouchEvent(disallowIntercept: Boolean) {}
     }

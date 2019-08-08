@@ -2,7 +2,7 @@ package com.coursion.freakycoder.mediapicker.adapters
 
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,7 +16,7 @@ import com.coursion.mediapickerlib.R
 class MediaAdapter(private val bitmapList: List<String>,
                    private val selected: List<Boolean>,
                    private val context: Context):
-        RecyclerView.Adapter<MediaAdapter.MyViewHolder>() {
+        androidx.recyclerview.widget.RecyclerView.Adapter<MediaAdapter.MyViewHolder>() {
 
     private val inflater: LayoutInflater
 
@@ -51,7 +51,7 @@ class MediaAdapter(private val bitmapList: List<String>,
         return bitmapList.size
     }
 
-    inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    inner class MyViewHolder(view: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(view) {
         var thumbnail: ImageView
         var check: ImageView
 

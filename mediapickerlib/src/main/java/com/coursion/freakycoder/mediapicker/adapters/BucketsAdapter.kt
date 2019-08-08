@@ -2,7 +2,7 @@ package com.coursion.freakycoder.mediapicker.adapters
 
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -18,7 +18,7 @@ import com.coursion.mediapickerlib.R
 class BucketsAdapter(private val bucketNames: List<String>,
                      private val bitmapList: List<String>,
                      private val context: Context) :
-        RecyclerView.Adapter<BucketsAdapter.MyViewHolder>() {
+        androidx.recyclerview.widget.RecyclerView.Adapter<BucketsAdapter.MyViewHolder>() {
 
     private val inflater: LayoutInflater
 
@@ -56,7 +56,7 @@ class BucketsAdapter(private val bucketNames: List<String>,
         return bucketNames.size
     }
 
-    inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    inner class MyViewHolder(view: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(view) {
         var title: TextView
         var thumbnail: ImageView
         var sl: SquareLayout
