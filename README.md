@@ -41,7 +41,7 @@ allprojects {
 ```
 ## Gradle
 
-```
+```kotlin
 implementation 'com.github.WrathChaos:MediaPickerLib:0.1.5'
 ```
 
@@ -49,13 +49,13 @@ implementation 'com.github.WrathChaos:MediaPickerLib:0.1.5'
 
 
 ##### This is the request code to handle and get the picked images/videos
-```
+```kotlin
 private val OPEN_MEDIA_PICKER = 1  // Request code
 ```
 
 
 ##### You need to import Gallery from MediaPickerLib and send mandatory intents to work
-```
+```kotlin
 val intent = Intent(this, Gallery::class.java)
 // Set the title for toolbar
 intent.putExtra("title", "Select media")
@@ -68,7 +68,7 @@ startActivityForResult(intent, OPEN_MEDIA_PICKER)
 
 ##### Receive what you picked here: This is an example from sample project, you can handle whatever you want with the path :)
 
-```
+```kotlin
 override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
     super.onActivityResult(requestCode, resultCode, data)
     // Check which request we're responding to
